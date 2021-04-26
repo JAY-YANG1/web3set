@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>링크태그</title>
+    </head>
+    <body>
+        <a name="top"></a>  <!-- 책갈피지정 -->
+        <h1>링크태그</h1>
+        <h2>앵커 : a</h2>
+        <hr/>
+        <p><a href="http://naver.com">네이버로 이동</a></p>
+        <p><a href="http://google.com">구글로 이동</a></p>
+        <p><a href="http://daum.net">다음으로 이동</a></p>
+        <p><a href="http://daum.net" target="_blank">다음으로 이동</a></p>
+        <!-- 외부사이트의 특정문서로 이동 : 사이트 기본문서는 index.html -->
+        <!-- 절대경로 지정방식으로 문서를 참조함 -->
+        <hr/>
+
+        <p><a href="01hello.html">01hello.html</a></p>
+        <p><a href="02글자태그.html">02글자태그.html</a></p>
+        <p><a href="03서식태그.html">03서식태그.html</a></p>
+        <!-- 현재사이트의 특정문서로 이동 -->
+        <!-- 상대경로 지정방식으로 문서를 참조함 -->
+
+        <!-- 절대경로 vs 상대경로
+        절대경로 : 특정파일의 위치를 표현할 때
+        [최상위 디렉토리를 기준]으로 시작하는 경로
+
+        상대경로 : 특정파일의 위치를 표현할 때
+        [현재 사용자가 이쓴ㄴ 디렉토리를 기준]으로 시작하는 경로
+
+        ex) 용산이마트
+        절대경로 : 서울을 기준으로 위치를 나타냄
+        상대경로 : 내가 있는 곳을 기준으로 위치를 나타냄
+
+        ex) 다음이미지에서 ee.jpg 의 위치를 경로로 나타냄
+        * 현재위치 : window
+        절대경로 : /opt/aaa/window/ee.jpg
+        상대경로 : ./ee.jpg
+
+        ex) 다음이미지에서 aa.txt 의 위치를 경로로 나타냄
+        * 현재위치 : ddd
+        절대경로 : /opt/aaa/aa.txt
+        상대경로 : ./../../aa.txt
+
+        경로표기상에
+        . : 현재 접근해 있는 디렉토리 의미
+        .. : 부모(상위) 디렉토리 의미
+
+        ex) 현재 위치는 window 디렉토리임
+        그런데 cd 명령으로 sbin 디렉토리로 이동하려 한다
+        절대경로와 상대경로로 나타낸다면?
+        절대경로 : cd /sbin
+        상대경로 : cd ../../../sbin
+        -->
+
+        <hr/>
+        <p><a href="#bottom">문서 맨 아래로</a></p>
+        <p><a href="#top">문서 맨 위로</a></p>
+        <p><a href="#enlipsum">영문 로렘입슘으로</a></p>
+        <p><a href="#kolipsum">한글 로렘입슘으로</a></p>
+
+        <hr/>
+        <a name="enlipsum"></a>  <!-- 책갈피지정 -->
+        <p>Nam ornare gravida ligula quis finibus. Quisque nunc ipsum, posuere sit amet diam vel, ultrices varius urna. Ut id lectus eu sem vulputate posuere a non velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere faucibus nisi consequat mattis. Donec ligula risus, placerat eu velit sed, tempor interdum libero. Maecenas iaculis sodales sapien ultricies maximus. Nulla turpis quam, condimentum quis facilisis ac, pellentesque dapibus nunc. Nam augue risus, maximus vitae tincidunt ac, finibus sit amet libero. Etiam condimentum dui quis porttitor commodo.</p>
+
+        <p>In ut risus ullamcorper, luctus neque consequat, vestibulum leo. Ut mauris ligula, vulputate non mal esuada non, eleifend a enim. Suspendisse potenti. Nam non odio ullamcorper, euismod quam quis, mollis metus. Donec nec nunc at eros scelerisque tincidunt imperdiet at turpis. Etiam feugiat ante vitae mauris lobortis mattis. Aliquam volutpat metus sit amet consectetur elementum. Sed porttitor nunc nibh, et efficitur elit elementum sed. Proin ut quam vel mi auctor laoreet tempor quis quam. In sem arcu, condimentum et nisl ut, aliquam malesuada tortor. Donec ullamcorper consectetur varius.</p>
+
+        <p>Suspendisse venenatis nisl id vulputate sollicitudin. Donec a ligula nec massa auctor cursus. Curabitur vitae enim ac mi imperdiet faucibus. Mauris semper enim augue, tempor condimentum velit imperdiet quis. Praesent sem nisl, vehicula a nulla at, ullamcorper ullamcorper urna. Vestibulum sed aliquam mi. Vestibulum vehicula pellentesque erat id pretium. Ut sodales dui rhoncus egestas convallis. Donec elementum massa eget venenatis molestie. Quisque nulla mi, semper eu mi sed, vestibulum imperdiet leo. Nunc vestibulum nec justo sed dapibus. Nullam accumsan convallis justo, non auctor massa ultricies eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed id rutrum magna. Nulla facilisi. Nam nulla ex, interdum et velit id, blandit pharetra eros.</p>
+
+        <p>Nullam elementum arcu vel leo dapibus imperdiet. Nunc aliquam elementum euismod. Nullam dui enim, consectetur sit amet pulvinar accumsan, fringilla eget ex. Sed fermentum mollis augue, quis imperdiet justo malesuada id. Proin pharetra augue ipsum, dignissim molestie tortor porttitor vitae. Proin pulvinar justo leo, ac aliquet ex malesuada ac. Praesent condimentum sagittis est ullamcorper viverra. Sed sagittis est et nisi ultricies, malesuada consequat lacus malesuada. Cras scelerisque quis orci ac varius. Ut facilisis, eros quis egestas pulvinar, arcu justo finibus metus, ac congue massa magna ac magna. Nam porttitor convallis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat iaculis lorem et sagittis.</p>
+
+        <p>Maecenas odio urna, accumsan molestie mattis quis, porta ut ante. Donec non nunc leo. In tincidunt libero nibh, sed pulvinar lacus finibus sed. Suspendisse eleifend suscipit augue at consequat. Pellentesque egestas et nisi quis elementum. In hac habitasse platea dictumst. Pellentesque mollis lectus eget purus molestie tempus. Aenean tempus ante at tempor pharetra. Maecenas pharetra turpis efficitur augue scelerisque condimentum quis sed tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam commodo sit amet magna a sagittis.</p>
+
+        <hr/>
+        <a name="kolipsum"></a>  <!-- 책갈피지정 -->
+        <p>하늘에는 옥 많은 쉬이 사람들의 이웃 겨울이 아스라히 별에도 거외다. 아무 언덕 이름자를 가난한 무엇인지 마디씩 있습니다. 우는 이름과 어머니 내 둘 슬퍼하는 버리었습니다. 못 가슴속에 내 별을 봅니다. 흙으로 다 별빛이 하늘에는 까닭이요, 아침이 없이 경, 봅니다. 말 시인의 하나의 한 잠, 프랑시스 불러 새워 청춘이 봅니다. 어머니 피어나듯이 가득 이름을 별 것은 쉬이 이 사람들의 버리었습니다. 토끼, 이런 별이 하나에 북간도에 소녀들의 아름다운 부끄러운 듯합니다. 자랑처럼 하나에 어머님, 이런 나는 있습니다. 그리워 딴은 옥 하나 하나에 까닭입니다. 이웃 잠, 했던 하나에 당신은 이런 파란 소학교 봅니다.</p>
+
+        <p>이름자를 다하지 한 별빛이 이름과, 않은 이름과, 하나의 벌레는 까닭입니다. 이름자 없이 애기 헤일 그리고 너무나 계십니다. 딴은 벌써 쓸쓸함과 같이 새겨지는 겨울이 내일 피어나듯이 부끄러운 계십니다. 계집애들의 하나의 하나 강아지, 때 무덤 듯합니다. 겨울이 불러 하나에 버리었습니다. 이런 아직 까닭이요, 새워 아스라히 마리아 아침이 거외다. 별 그러나 했던 언덕 불러 파란 하나에 가을로 봅니다. 벌레는 속의 못 그러나 언덕 파란 나는 있습니다. 위에 사람들의 부끄러운 나의 까닭이요, 별빛이 우는 계십니다.</p>
+
+        <p>때 아직 언덕 하나에 된 언덕 나는 계십니다. 이국 이름을 같이 계십니다. 가슴속에 슬퍼하는 흙으로 이름을 까닭입니다. 다 가을 아직 나의 있습니다. 쓸쓸함과 했던 별을 이 것은 없이 이국 버리었습니다. 강아지, 노루, 많은 우는 이런 추억과 새겨지는 까닭입니다. 어머님, 벌레는 했던 없이 이런 내 무덤 있습니다. 별에도 가난한 동경과 있습니다. 풀이 하나에 별 않은 내 이름을 하나에 버리었습니다.</p>
+
+        <p>이 보고, 불러 지나가는 속의 아름다운 이런 듯합니다. 하나에 토끼, 남은 이런 차 별 말 봅니다. 한 계절이 다 이국 벌써 멀리 어머니 버리었습니다. 벌써 나는 당신은 이름을 나의 이런 있습니다. 하나에 이름과 나는 쓸쓸함과 책상을 이름과, 나는 별빛이 있습니다. 피어나듯이 새겨지는 가난한 까닭입니다. 못 다 새워 않은 벌써 내 거외다. 다 속의 나의 봅니다. 노새, 다 북간도에 계절이 봅니다. 계집애들의 흙으로 한 이 이네들은 동경과 하나에 지나고 어머니 까닭입니다.</p>
+
+        <p>새워 가난한 애기 라이너 별들을 있습니다. 풀이 잠, 때 별 나의 한 별에도 프랑시스 까닭입니다. 우는 까닭이요, 하늘에는 내린 아스라히 버리었습니다. 사람들의 나는 없이 이름과 오면 불러 있습니다. 어머니, 토끼, 가을로 계십니다. 하나에 둘 언덕 내린 봅니다. 위에 이름자를 남은 무성할 딴은 계십니다. 청춘이 하나에 어머니, 무덤 패, 계십니다. 쓸쓸함과 까닭이요, 무성할 언덕 이름과, 버리었습니다. 소학교 그리워 이런 계십니다.</p>
+
+        <a name="bottom"></a>  <!-- 책갈피지정 -->
+
+        <hr/>
+        <p><a href="#top">맨 위로 이동</a></p>
+    </body>
+</html>
+<!--
+하이퍼텍스트
+수많은 링크들로 구성된 문서를 의미
+
+링크(hyperlink) : 특정문서에서 다른 문서나 사이트로의
+연결을 제공하는 고리
+링크를 통해 동영상, 그림, 문서, 프로그램, 파일 등의
+특정위치나 대상을 지정할 수 있음
+
+앵커(anchor)
+링크를 만들어주는 태그
+
+lorem ipsum
+시험적으로 디자인의 완성도를 확인하기 위해
+채우는 임의의 텍스트를 의미 (더미 텍스트)
+lipsum.com          (영문)
+hangul.thefron.me   (한글)
+-->
